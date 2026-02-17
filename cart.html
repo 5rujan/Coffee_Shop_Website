@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Cart - BrewNova</title>
+</head>
+
+<body>
+    <header class="header" id="header" style="box-shadow: 0 4px 16px hsla(166, 85%, 8%, .3);">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">BrewNova</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="index.html#home" class="nav__link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="index.html#products" class="nav__link">PRODUCTS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main section" style="padding-top: 8rem;">
+        <div class="container">
+            <h2 class="section__title">Your Cart</h2>
+
+            <div id="cart-container">
+                <table class="cart__table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Items will be injected here by JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="cart__total">
+                <h3>Total: <span id="cart-total-price">$0.00</span></h3>
+                <a href="payment.html" class="button button-dark" id="checkout-btn">Proceed to Checkout</a>
+            </div>
+
+            <div id="empty-cart-msg" style="display: none; text-align: center;">
+                <p>Your cart is empty.</p>
+                <a href="index.html#products" class="button">Shop Now</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/cart.js"></script>
+</body>
+
+</html>
